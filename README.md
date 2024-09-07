@@ -1,2 +1,2 @@
 # SoftUni
-Exercises done in SoftUni from me.
+Projects I've practiced on in SoftUni.
