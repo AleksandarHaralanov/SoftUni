@@ -1,4 +1,4 @@
-package io.github.aleksandarharalanov.softuni.java.basics.firststepsincoding.exercise;
+package io.github.aleksandarharalanov.softuni.java.basics.firststepsincoding.exercise.code;
 
 import java.util.Scanner;
 

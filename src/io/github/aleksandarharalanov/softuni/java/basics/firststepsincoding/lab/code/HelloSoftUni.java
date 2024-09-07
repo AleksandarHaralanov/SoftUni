@@ -1,4 +1,4 @@
-package io.github.aleksandarharalanov.softuni.java.basics.firststepsincoding.lab;
+package io.github.aleksandarharalanov.softuni.java.basics.firststepsincoding.lab.code;
 
 public class HelloSoftUni {
     public static void main(String[] args) {

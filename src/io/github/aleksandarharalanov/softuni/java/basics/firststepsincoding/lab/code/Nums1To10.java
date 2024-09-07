@@ -1,4 +1,4 @@
-package io.github.aleksandarharalanov.softuni.java.basics.firststepsincoding.lab;
+package io.github.aleksandarharalanov.softuni.java.basics.firststepsincoding.lab.code;
 
 public class Nums1To10 {
     public static void main(String[] args) {
