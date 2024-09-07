@@ -7,11 +7,8 @@ public class DepositCalculator {
         try (Scanner scanner = new Scanner(System.in)) {
             double deposit = Double.parseDouble(scanner.nextLine());
             int term = Integer.parseInt(scanner.nextLine());
-            double interestRate = Double.parseDouble(scanner.nextLine()) / 100;
-            double accumulatedInterest = deposit * interestRate;
-            double monthlyInterest = accumulatedInterest / 12;
-            double totalInterest = term * monthlyInterest;
-            double sum = deposit + totalInterest;
+            double interest = Double.parseDouble(scanner.nextLine()) / 100;
+            double sum = deposit + (term * ((deposit * interest) / 12));
             System.out.println(sum);
         } catch (NumberFormatException e) {
             System.out.println("Invalid input. Please enter a valid number.");
