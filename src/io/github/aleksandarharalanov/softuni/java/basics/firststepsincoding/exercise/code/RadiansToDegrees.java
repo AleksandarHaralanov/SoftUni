@@ -11,7 +11,7 @@ public class RadiansToDegrees {
 
             System.out.println(degrees);
         } catch (NumberFormatException e) {
-            System.out.println("Invalid input for radians. Please enter a valid number (integer or double).");
+            throw new NumberFormatException("Invalid input for radians. Please enter a valid number (integer or double).");
         }
     }
 }

@@ -15,7 +15,7 @@ public class SuppliesForSchool {
 
             System.out.println(finalSum);
         } catch (NumberFormatException e) {
-            System.out.println("Invalid input. Please enter a valid number (integer).");
+            throw new NumberFormatException("Invalid input. Please enter a valid integer.");
         }
     }
 }

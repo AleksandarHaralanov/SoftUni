@@ -18,7 +18,7 @@ public class FoodDelivery {
 
             System.out.println(total);
         } catch (NumberFormatException e) {
-            System.out.println("Invalid input. Please enter a valid number (integer).");
+            throw new NumberFormatException("Invalid input. Please enter a valid integer.");
         }
     }
 }

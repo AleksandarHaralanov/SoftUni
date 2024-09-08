@@ -15,7 +15,7 @@ public class BasketballEquipment {
 
             System.out.println(sum);
         } catch (NumberFormatException e) {
-            System.out.println("Invalid input. Please enter a valid number.");
+            throw new NumberFormatException("Invalid input. Please enter a valid integer.");
         }
     }
 }

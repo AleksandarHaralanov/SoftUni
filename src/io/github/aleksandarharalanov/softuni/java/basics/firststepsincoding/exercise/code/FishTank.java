@@ -16,7 +16,7 @@ public class FishTank {
 
             System.out.println(litersNeeded);
         } catch (NumberFormatException e) {
-            System.out.println("Invalid input. Please enter a valid number (integer or double).");
+            throw new NumberFormatException("Invalid input. Please enter a valid number (integer or double).");
         }
     }
 }
