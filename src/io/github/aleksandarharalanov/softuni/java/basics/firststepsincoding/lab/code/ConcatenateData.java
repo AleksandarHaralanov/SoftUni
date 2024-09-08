@@ -9,9 +9,10 @@ public class ConcatenateData {
             String lastName = scanner.nextLine();
             int age = Integer.parseInt(scanner.nextLine());
             String town = scanner.nextLine();
+
             System.out.printf("You are %s %s, a %d-years old person from %s.", firstName, lastName, age, town);
         } catch (NumberFormatException e) {
-            System.out.println("Invalid input for age. Please enter a valid number (integer).");
+            throw new NumberFormatException("Invalid input for age. Please enter a valid integer.");
         }
     }
 }

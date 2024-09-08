@@ -4,14 +4,13 @@ import java.util.Scanner;
 
 public class RectangleArea {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        try {
+        try (Scanner scanner = new Scanner(System.in)) {
             int a = Integer.parseInt(scanner.nextLine());
             int b = Integer.parseInt(scanner.nextLine());
-            System.out.print(a * b);
-        } catch (RuntimeException e) {
-            throw new RuntimeException("Invalid input. You need to enter digits only.");
+
+            System.out.println(a * b);
+        } catch (NumberFormatException e) {
+            throw new NumberFormatException("Invalid input. Please enter a valid integer.");
         }
     }
 }
