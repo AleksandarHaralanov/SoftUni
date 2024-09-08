@@ -7,9 +7,9 @@ Projects I've practiced on in SoftUni.
   <details>
     <summary>Basics</summary>
     <ol>
-      <li>First Steps In Coding - Lab</li>
-      <li>First Steps In Coding - Exercise</li>
-      <li>Conditional Statements - Lab</li>
+      <li><a href="src/io/github/aleksandarharalanov/softuni/java/basics/firststepsincoding/lab">First Steps In Coding - Lab</a></li>
+      <li><a href="src/io/github/aleksandarharalanov/softuni/java/basics/firststepsincoding/exercise">First Steps In Coding - Exercise</a></li>
+      <li><a href="src/io/github/aleksandarharalanov/softuni/java/basics/conditionalstatements/lab">Conditional Statements - Lab</a></li>
       <li>Conditional Statements - Exercise</li>
       <li>Conditional Statements Advanced - Lab</li>
       <li>Conditional Statements Advanced - Exercise</li>
