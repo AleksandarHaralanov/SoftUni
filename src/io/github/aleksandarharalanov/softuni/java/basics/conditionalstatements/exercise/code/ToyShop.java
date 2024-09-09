@@ -23,7 +23,7 @@ public class ToyShop {
             if (earnings > price) {
                 System.out.printf("Yes! %.2f lv left.", earnings - price);
             } else {
-                System.out.printf("Not enough money! %.2f lv needed.", Math.abs(earnings - price));
+                System.out.printf("Not enough money! %.2f lv needed.", price - earnings);
             }
         } catch (NumberFormatException e) {
             throw new NumberFormatException("Invalid input. Please enter a valid number (integer or double).");
