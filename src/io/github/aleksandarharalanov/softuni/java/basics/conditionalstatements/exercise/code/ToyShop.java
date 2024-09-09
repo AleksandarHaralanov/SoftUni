@@ -26,7 +26,7 @@ public class ToyShop {
                 System.out.printf("Not enough money! %.2f lv needed.", Math.abs(earnings - price));
             }
         } catch (NumberFormatException e) {
-            System.out.println("Invalid input. Please enter a valid number (integer or double).");
+            throw new NumberFormatException("Invalid input. Please enter a valid number (integer or double).");
         }
     }
 }
