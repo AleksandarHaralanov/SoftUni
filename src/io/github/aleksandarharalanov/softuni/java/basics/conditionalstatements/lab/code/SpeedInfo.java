@@ -19,7 +19,7 @@ public class SpeedInfo {
                 System.out.println("extremely fast");
             }
         } catch (NumberFormatException e) {
-            System.out.println("Invalid input. Please enter a valid number (integer or double).");
+            throw new NumberFormatException("Invalid input. Please enter a valid number (integer or double).");
         }
     }
 }
