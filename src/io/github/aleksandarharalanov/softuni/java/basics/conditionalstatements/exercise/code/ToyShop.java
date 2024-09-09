@@ -16,14 +16,14 @@ public class ToyShop {
             double earnings = puzzles * 2.6 + dolls * 3 + plushies * 4.1 + minions * 8.2 + trucks * 2;
 
             if (count >= 50) {
-                earnings = earnings * 0.75;
+                earnings *= 0.75;
             }
-            earnings = earnings * 0.9;
+            earnings *= 0.9;
 
-            if (earnings > price) {
-                System.out.printf("Yes! %.2f lv left.", earnings - price);
+            if (earnings >= price) {
+                System.out.printf("Yes! %.2f lv left.%n", earnings - price);
             } else {
-                System.out.printf("Not enough money! %.2f lv needed.", price - earnings);
+                System.out.printf("Not enough money! %.2f lv needed.%n", price - earnings);
             }
         } catch (NumberFormatException e) {
             throw new NumberFormatException("Invalid input. Please enter a valid number (integer or double).");
