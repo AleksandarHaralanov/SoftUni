@@ -19,7 +19,7 @@ public class Repainting {
 
             System.out.println(finalPrice);
         } catch (NumberFormatException e) {
-            throw new NumberFormatException("Invalid input. Please enter a valid integer.");
+            throw new IllegalArgumentException("Invalid input. Please enter a valid number (integer).", e);
         }
     }
 }

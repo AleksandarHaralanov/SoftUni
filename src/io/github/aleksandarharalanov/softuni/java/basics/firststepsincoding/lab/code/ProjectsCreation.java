@@ -12,7 +12,7 @@ public class ProjectsCreation {
                     "The architect %s will need %d hours to complete %d project/s.", name, 3 * projects, projects
             );
         } catch (NumberFormatException e) {
-            throw new NumberFormatException("Invalid input for projects. Please enter a valid integer.");
+            throw new IllegalArgumentException("Invalid input. Please enter a valid number (integer).", e);
         }
     }
 }

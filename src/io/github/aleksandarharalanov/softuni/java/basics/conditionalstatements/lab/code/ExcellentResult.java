@@ -11,7 +11,7 @@ public class ExcellentResult {
                 System.out.println("Excellent!");
             }
         } catch (NumberFormatException e) {
-            throw new NumberFormatException("Invalid input. Please enter a valid integer.");
+            throw new IllegalArgumentException("Invalid input. Please enter a valid number (integer).", e);
         }
     }
 }

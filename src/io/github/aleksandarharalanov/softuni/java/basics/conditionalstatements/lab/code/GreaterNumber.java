@@ -14,7 +14,7 @@ public class GreaterNumber {
                 System.out.println(num2);
             }
         } catch (NumberFormatException e) {
-            throw new NumberFormatException("Invalid input. Please enter a valid integer.");
+            throw new IllegalArgumentException("Invalid input. Please enter a valid number (integer).", e);
         }
     }
 }

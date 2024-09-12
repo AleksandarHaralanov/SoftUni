@@ -10,12 +10,12 @@ public class SuppliesForSchool {
             int liters = Integer.parseInt(scanner.nextLine());
             int discount = Integer.parseInt(scanner.nextLine());
 
-            double sum = (pens * 5.8 + markers * 7.2 + liters * 1.2);
+            double sum = pens * 5.8 + markers * 7.2 + liters * 1.2;
             double finalSum = sum - (sum * ((double) discount / 100));
 
             System.out.println(finalSum);
         } catch (NumberFormatException e) {
-            throw new NumberFormatException("Invalid input. Please enter a valid integer.");
+            throw new IllegalArgumentException("Invalid input. Please enter a valid number (integer).", e);
         }
     }
 }

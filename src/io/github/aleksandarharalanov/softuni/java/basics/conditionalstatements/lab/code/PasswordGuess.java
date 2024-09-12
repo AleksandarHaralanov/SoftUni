@@ -12,8 +12,6 @@ public class PasswordGuess {
             } else {
                 System.out.println("Wrong password!");
             }
-        } catch (NumberFormatException e) {
-            throw new NumberFormatException("Invalid input. Please enter a valid integer.");
         }
     }
 }

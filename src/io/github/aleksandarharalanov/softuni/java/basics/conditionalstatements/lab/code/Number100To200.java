@@ -15,7 +15,7 @@ public class Number100To200 {
                 System.out.println("Greater than 200");
             }
         } catch (NumberFormatException e) {
-            throw new NumberFormatException("Invalid input. Please enter a valid integer.");
+            throw new IllegalArgumentException("Invalid input. Please enter a valid number (integer).", e);
         }
     }
 }

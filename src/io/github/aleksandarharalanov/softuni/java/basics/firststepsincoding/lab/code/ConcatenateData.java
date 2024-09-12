@@ -12,7 +12,7 @@ public class ConcatenateData {
 
             System.out.printf("You are %s %s, a %d-years old person from %s.", firstName, lastName, age, town);
         } catch (NumberFormatException e) {
-            throw new NumberFormatException("Invalid input for age. Please enter a valid integer.");
+            throw new IllegalArgumentException("Invalid input. Please enter a valid number (integer).", e);
         }
     }
 }

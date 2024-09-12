@@ -7,11 +7,11 @@ public class RadiansToDegrees {
         try (Scanner scanner = new Scanner(System.in)) {
             double radians = Double.parseDouble(scanner.nextLine());
 
-            double degrees = radians * 180 / Math.PI;
+            double degrees = (radians * 180) / Math.PI;
 
             System.out.println(degrees);
         } catch (NumberFormatException e) {
-            throw new NumberFormatException("Invalid input for radians. Please enter a valid number (integer or double).");
+            throw new IllegalArgumentException("Invalid input. Please enter a valid number (integer or double).", e);
         }
     }
 }

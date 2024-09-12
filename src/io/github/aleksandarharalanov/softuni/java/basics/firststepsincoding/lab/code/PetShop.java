@@ -8,11 +8,11 @@ public class PetShop {
             int dogFood = Integer.parseInt(scanner.nextLine());
             int catFood = Integer.parseInt(scanner.nextLine());
 
-            double finalPrice = (dogFood * 2.5) + (catFood * 4);
+            double finalPrice = dogFood * 2.5 + catFood * 4;
 
             System.out.printf("%.2f lv.", finalPrice);
         } catch (NumberFormatException e) {
-            throw new NumberFormatException("Invalid input. Please enter a valid integer.");
+            throw new IllegalArgumentException("Invalid input. Please enter a valid number (integer).", e);
         }
     }
 }

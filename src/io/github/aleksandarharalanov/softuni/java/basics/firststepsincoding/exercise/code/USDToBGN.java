@@ -11,7 +11,7 @@ public class USDToBGN {
 
             System.out.println(bgn);
         } catch (NumberFormatException e) {
-            throw new NumberFormatException("Invalid input for USD. Please enter a valid number (integer or double).");
+            throw new IllegalArgumentException("Invalid input. Please enter a valid number (integer or double).", e);
         }
     }
 }

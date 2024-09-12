@@ -7,10 +7,11 @@ public class RectangleArea {
         try (Scanner scanner = new Scanner(System.in)) {
             int a = Integer.parseInt(scanner.nextLine());
             int b = Integer.parseInt(scanner.nextLine());
+            int formula = a * b;
 
-            System.out.println(a * b);
+            System.out.println(formula);
         } catch (NumberFormatException e) {
-            throw new NumberFormatException("Invalid input. Please enter a valid integer.");
+            throw new IllegalArgumentException("Invalid input. Please enter a valid number (integer).", e);
         }
     }
 }

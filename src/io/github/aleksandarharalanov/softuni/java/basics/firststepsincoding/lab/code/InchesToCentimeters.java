@@ -9,7 +9,7 @@ public class InchesToCentimeters {
 
             System.out.println(inches * 2.54);
         } catch (NumberFormatException e) {
-            throw new NumberFormatException("Invalid input. Please enter a valid number (integer or double).");
+            throw new IllegalArgumentException("Invalid input. Please enter a valid number (double).", e);
         }
     }
 }

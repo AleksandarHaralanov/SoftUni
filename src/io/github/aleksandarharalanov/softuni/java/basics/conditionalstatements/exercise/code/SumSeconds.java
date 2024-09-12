@@ -19,7 +19,7 @@ public class SumSeconds {
                 System.out.printf("%d:%d", minutes, seconds);
             }
         } catch (NumberFormatException e) {
-            throw new NumberFormatException("Invalid input. Please enter a valid integer.");
+            throw new IllegalArgumentException("Invalid input. Please enter a valid number (integer).", e);
         }
     }
 }

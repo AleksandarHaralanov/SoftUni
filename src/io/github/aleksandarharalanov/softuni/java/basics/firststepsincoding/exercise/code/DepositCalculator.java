@@ -13,7 +13,7 @@ public class DepositCalculator {
 
             System.out.println(sum);
         } catch (NumberFormatException e) {
-            throw new NumberFormatException("Invalid input. Please enter a valid number (integer or double).");
+            throw new IllegalArgumentException("Invalid input. Please enter a valid number (integer or double).", e);
         }
     }
 }
