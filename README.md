@@ -52,9 +52,8 @@ The courses are structured to progressively increase in difficulty, providing a 
 
 ### Option 2: Clone via VCS
 
-To clone the repository using Version Control System (VCS), follow these steps based on your preferred IDE:
-
-**For IntelliJ IDEA:**
+<details>
+  <summary><b>For IntelliJ IDEA</b></summary>
 
 1. Open IntelliJ IDEA.
 2. Go to `File > New > Project from Version Control`.
@@ -65,7 +64,10 @@ To clone the repository using Version Control System (VCS), follow these steps b
     ```
 4. Click `Clone` to download the project.
 
-**For Visual Studio:**
+</details>
+
+<details>
+  <summary><b>For Visual Studio</b></summary>
 
 1. Open Visual Studio.
 2. Go to `File > Clone Repository`.
@@ -75,7 +77,10 @@ To clone the repository using Version Control System (VCS), follow these steps b
     ```
 4. Click `Clone` to download the project.
 
-**For Eclipse:**
+</details>
+
+<details>
+  <summary><b>For Eclipse</b></summary>
 
 1. Open Eclipse.
 2. Go to `File > Import`.
@@ -86,5 +91,7 @@ To clone the repository using Version Control System (VCS), follow these steps b
     https://github.com/AleksandarHaralanov/SoftUni
     ```
 6. Click `Next`, configure your branches, then proceed with the cloning process.
+
+</details>
 
 **Note:** These steps are for IntelliJ IDEA, Visual Studio, and Eclipse, but you can follow a similar approach in any IDE that supports version control (e.g., VSCode, etc.).
