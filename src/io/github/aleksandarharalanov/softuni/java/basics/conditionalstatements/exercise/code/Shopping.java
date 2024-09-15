@@ -14,7 +14,6 @@ public class Shopping {
             double sumCpu = cpu * (sumGpu * 0.35);
             double sumRam = ram * (sumGpu * 0.1);
             double total = sumGpu + sumCpu + sumRam;
-
             if (gpu > cpu) {
                 total *= 0.85;
             }
