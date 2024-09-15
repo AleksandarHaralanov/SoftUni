@@ -1,5 +1,7 @@
 # SoftUni
-Projects I've practiced on in SoftUni.
+This repository contains projects I have studied on while at [SoftUni](https://softuni.bg/).
+
+<br>
 
 ## Projects
 <details>
@@ -46,6 +48,8 @@ Projects I've practiced on in SoftUni.
         </ol>
     </details>
 </details>
+
+<br>
 
 ## How to Use
 ### Option 1: Clone via Git
