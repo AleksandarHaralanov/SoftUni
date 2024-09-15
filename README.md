@@ -10,7 +10,7 @@ The courses are structured to progressively increase in difficulty, providing a 
 
 <details>
   <summary><b>Java</b></summary>
-  <ul style="list-style-type:none;">
+  <ul>
     <li>
       <details>
         <summary>Basics</summary>
