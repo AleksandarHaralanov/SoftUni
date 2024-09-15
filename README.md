@@ -46,9 +46,9 @@ The courses are structured to progressively increase in difficulty, providing a 
 ### Option 1: Clone via Git
 
 1. Open your terminal and run the following command:
-    ```bash
-    git clone https://github.com/AleksandarHaralanov/SoftUni.git
-    ```
+```
+git clone https://github.com/AleksandarHaralanov/SoftUni.git
+```
 
 ### Option 2: Clone via VCS
 
@@ -56,7 +56,7 @@ The courses are structured to progressively increase in difficulty, providing a 
 2. Go to `File > New > Project from Version Control`.
    1. If you're on the dashboard home screen of the IDE, click `CLONE FROM VCS` on the top-right button.
 3. In the `URL` field, paste this repository's link.
-    ```
-    https://github.com/AleksandarHaralanov/SoftUni
-    ```
+```
+https://github.com/AleksandarHaralanov/SoftUni
+```
 4. Click `Clone` to download the project.
