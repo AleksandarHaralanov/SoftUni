@@ -1,5 +1,5 @@
 # SoftUni
-This repository contains projects I have studied on while at [SoftUni](https://softuni.bg/).
+This repository contains projects I have exercised upon during my education at [SoftUni](https://softuni.bg/).
 
 ## Projects
 <details>
