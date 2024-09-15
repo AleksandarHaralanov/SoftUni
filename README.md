@@ -1,8 +1,6 @@
 # SoftUni
 This repository contains projects I have studied on while at [SoftUni](https://softuni.bg/).
 
-<br>
-
 ## Projects
 <details>
     <summary><b>Java</b></summary>
@@ -48,8 +46,6 @@ This repository contains projects I have studied on while at [SoftUni](https://s
         </ol>
     </details>
 </details>
-
-<br>
 
 ## How to Use
 ### Option 1: Clone via Git
