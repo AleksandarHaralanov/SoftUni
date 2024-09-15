@@ -46,7 +46,7 @@ The courses are structured to progressively increase in difficulty, providing a 
 ### Option 1: Clone via Git
 
 1. Open your terminal and run the following command:
-```
+```bash
 git clone https://github.com/AleksandarHaralanov/SoftUni.git
 ```
 
