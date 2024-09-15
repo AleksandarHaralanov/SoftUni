@@ -46,3 +46,20 @@ Projects I've practiced on in SoftUni.
         </ol>
     </details>
 </details>
+
+## How to Use
+### Option 1: Clone via Git
+1. Open your terminal and run the following command:
+    ```bash
+    git clone https://github.com/AleksandarHaralanov/SoftUni.git
+    ```
+
+### Option 2: Clone via VCS
+1. Open IntelliJ IDEA.
+2. Go to `File > New > Project from Version Control`.
+   1. If you're on the dashboard home screen of the IDE, click `CLONE FROM VCS` on the top-right button.
+3. In the `URL` field, paste this repository's link.
+    ```
+    https://github.com/AleksandarHaralanov/SoftUni
+    ```
+4. Click `Clone` to download the project.
