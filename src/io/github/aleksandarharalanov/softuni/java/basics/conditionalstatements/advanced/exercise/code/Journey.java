@@ -8,20 +8,20 @@ public class Journey {
             double budget = Double.parseDouble(scanner.nextLine());
             String season = scanner.nextLine().toLowerCase();
 
-            double spent;
             String destination;
             String accommodation;
+            double spent;
             if (budget <= 100) {
                 switch (season) {
                     case "summer":
                         destination = "Bulgaria";
-                        spent = budget * 0.30;
                         accommodation = "Camp";
+                        spent = budget * 0.30;
                         break;
                     case "winter":
                         destination = "Bulgaria";
-                        spent = budget * 0.7;
                         accommodation = "Hotel";
+                        spent = budget * 0.7;
                         break;
                     default:
                         return;
@@ -30,21 +30,21 @@ public class Journey {
                 switch (season) {
                     case "summer":
                         destination = "Balkans";
-                        spent = budget * 0.4;
                         accommodation = "Camp";
+                        spent = budget * 0.4;
                         break;
                     case "winter":
                         destination = "Balkans";
-                        spent = budget * 0.8;
                         accommodation = "Hotel";
+                        spent = budget * 0.8;
                         break;
                     default:
                         return;
                 }
             } else {
                 destination = "Europe";
-                spent = budget * 0.9;
                 accommodation = "Hotel";
+                spent = budget * 0.9;
             }
 
             System.out.printf("Somewhere in %s%n", destination);
