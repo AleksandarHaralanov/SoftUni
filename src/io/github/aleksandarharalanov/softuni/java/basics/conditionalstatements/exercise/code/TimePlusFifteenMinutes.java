@@ -2,7 +2,7 @@ package io.github.aleksandarharalanov.softuni.java.basics.conditionalstatements.
 
 import java.util.Scanner;
 
-public class TimePlus15Minutes {
+public class TimePlusFifteenMinutes {
     public static void main(String[] args) {
         try (Scanner scanner = new Scanner(System.in)) {
             int hours = Integer.parseInt(scanner.nextLine());

@@ -1,6 +1,6 @@
 package io.github.aleksandarharalanov.softuni.java.basics.firststepsincoding.lab.code;
 
-public class Nums1To10 {
+public class NumsOneToTen {
     public static void main(String[] args) {
         System.out.println(1);
         System.out.println(2);

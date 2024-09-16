@@ -2,7 +2,7 @@ package io.github.aleksandarharalanov.softuni.java.basics.conditionalstatements.
 
 import java.util.Scanner;
 
-public class Number100To200 {
+public class NumberOneHundredToTwoHundred {
     public static void main(String[] args) {
         try (Scanner scanner = new Scanner(System.in)) {
             int num = Integer.parseInt(scanner.nextLine());
