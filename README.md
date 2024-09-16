@@ -46,50 +46,50 @@ The courses are structured to progressively increase in difficulty, providing a 
 ### Option 1: Clone via Git
 
 1. Open your terminal and run the following command:
-    ```bash
-    git clone https://github.com/AleksandarHaralanov/SoftUni.git
-    ```
+   ```bash
+   git clone https://github.com/AleksandarHaralanov/SoftUni.git
+   ```
 
 ### Option 2: Clone via VCS
 
 <details>
-  <summary><b>For IntelliJ IDEA</b></summary>
+   <summary><b>For IntelliJ IDEA</b></summary>
 
 1. Open IntelliJ IDEA.
 2. Go to `File > New > Project from Version Control`.
-    1. If you're on the dashboard home screen of the IDE, click `CLONE FROM VCS` on the top-right button.
+   1. If you're on the dashboard home screen of the IDE, click `CLONE FROM VCS` on the top-right button.
 3. In the `URL` field, paste the repository link:
-    ```
-    https://github.com/AleksandarHaralanov/SoftUni
-    ```
+   ```
+   https://github.com/AleksandarHaralanov/SoftUni
+   ```
 4. Click `Clone` to download the project.
 
 </details>
 
 <details>
-  <summary><b>For Visual Studio</b></summary>
+   <summary><b>For Visual Studio</b></summary>
 
 1. Open Visual Studio.
 2. Go to `File > Clone Repository`.
 3. In the `Repository location` field, paste the repository link:
-    ```
-    https://github.com/AleksandarHaralanov/SoftUni
-    ```
+   ```
+   https://github.com/AleksandarHaralanov/SoftUni
+   ```
 4. Click `Clone` to download the project.
 
 </details>
 
 <details>
-  <summary><b>For Eclipse</b></summary>
+   <summary><b>For Eclipse</b></summary>
 
 1. Open Eclipse.
 2. Go to `File > Import`.
 3. Select `Git > Projects from Git`, then click `Next`.
 4. Choose `Clone URI`, and click `Next`.
 5. In the `URI` field, paste the repository link:
-    ```
-    https://github.com/AleksandarHaralanov/SoftUni
-    ```
+   ```
+   https://github.com/AleksandarHaralanov/SoftUni
+   ```
 6. Click `Next`, configure your branches, then proceed with the cloning process.
 
 </details>
