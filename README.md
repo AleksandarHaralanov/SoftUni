@@ -23,10 +23,10 @@ The courses are structured to progressively increase in difficulty, providing a 
                <li><a href="src/io/github/aleksandarharalanov/softuni/java/basics/conditionalstatements/advanced/exercise">Conditional Statements Advanced - Exercise</a></li>
                <li><a href="src/io/github/aleksandarharalanov/softuni/java/basics/forloop/lab">For Loop - Lab</a></li>
                <li><a href="src/io/github/aleksandarharalanov/softuni/java/basics/forloop/exercise">For Loop - Exercise</a></li>
-               <li>While Loop - Lab</li>
-               <li>While Loop - Exercise</li>
-               <li>Nested Loops - Lab</li>
-               <li>Nested Loops - Exercise</li>
+               <li><a href="src/io/github/aleksandarharalanov/softuni/java/basics/whileloop/lab">While Loop - Lab</a></li>
+               <li><a href="src/io/github/aleksandarharalanov/softuni/java/basics/whileloop/exercise">While Loop - Exercise</a></li>
+               <li><a href="src/io/github/aleksandarharalanov/softuni/java/basics/nestedloops/lab">Nested Loops - Lab</a></li>
+               <li><a href="src/io/github/aleksandarharalanov/softuni/java/basics/nestedloops/exercise">Nested Loops - Exercise</a></li>
             </ul>
          </details>
       </li>
