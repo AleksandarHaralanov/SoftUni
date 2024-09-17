@@ -95,3 +95,9 @@ The courses are structured to progressively increase in difficulty, providing a 
 </details>
 
 **Note:** These steps are for IntelliJ IDEA, Visual Studio, and Eclipse, but you can follow a similar approach in any IDE that supports version control (e.g., VSCode, etc.).
+
+## Disclaimer
+
+The PDFs included in this repository are copyrighted materials from SoftUni and are provided solely for educational reference.
+
+These documents are **not** covered by the MIT license and may not be redistributed or used outside this context. Please refer to SoftUni’s [Terms of Service](https://softuni.org) for more information.
