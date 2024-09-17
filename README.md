@@ -100,4 +100,4 @@ The courses are structured to progressively increase in difficulty, providing a 
 
 The PDFs included in this repository are copyrighted materials from SoftUni and are provided solely for educational reference.
 
-These documents are <u><b>not</b></u> covered by the MIT license and may not be redistributed or used outside this context. Please refer to SoftUni’s [Terms of Service](https://softuni.org) for more information.
+These documents are **not** covered by the MIT license and may not be redistributed or used outside this context. Please refer to SoftUni’s [Terms of Service](https://softuni.org) for more information.
