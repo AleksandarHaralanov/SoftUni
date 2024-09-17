@@ -27,9 +27,10 @@ public class TennisRanklist {
                 }
             }
 
+            int finalPoints = startingPoints + wonPoints;
             double averagePoints = Math.floor((double) wonPoints / tournaments);
             double percentageWonTournaments = ((double) wonTournaments / tournaments) * 100;
-            System.out.printf("Final points: %d%n", startingPoints + wonPoints);
+            System.out.printf("Final points: %d%n", finalPoints);
             System.out.printf("Average points: %.0f%n", averagePoints);
             System.out.printf("%.2f%%%n", percentageWonTournaments);
         } catch (NumberFormatException e) {
