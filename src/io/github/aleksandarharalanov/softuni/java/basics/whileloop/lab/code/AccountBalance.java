@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 public class AccountBalance {
     public static void main(String[] args) {
-        double total = 0.0;
         try (Scanner scanner = new Scanner(System.in)) {
             String input = scanner.nextLine();
 
+            double total = 0.0;
             while (!input.equals("NoMoreMoney")) {
                 double increase = Double.parseDouble(input);
                 if (increase < 0) {
