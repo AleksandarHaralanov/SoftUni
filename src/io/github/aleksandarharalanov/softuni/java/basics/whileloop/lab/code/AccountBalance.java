@@ -19,10 +19,10 @@ public class AccountBalance {
                 total += increase;
                 input = scanner.nextLine();
             }
-        } catch (NumberFormatException e) {
-            System.out.println("Invalid operation!");
-        } finally {
+
             System.out.printf("Total: %.2f%n", total);
+        } catch (NumberFormatException e) {
+            throw new IllegalArgumentException("Invalid input. Please enter a valid number (integer or double).", e);
         }
     }
 }
