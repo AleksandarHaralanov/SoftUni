@@ -4,14 +4,11 @@ import java.util.Scanner;
 
 public class RadiansToDegrees {
     public static void main(String[] args) {
-        try (Scanner scanner = new Scanner(System.in)) {
-            double radians = Double.parseDouble(scanner.nextLine());
+        Scanner scanner = new Scanner(System.in);
 
-            double degrees = (radians * 180) / Math.PI;
+        double radians = Double.parseDouble(scanner.nextLine());
+        double degrees = (radians * 180) / Math.PI;
 
-            System.out.println(degrees);
-        } catch (NumberFormatException e) {
-            throw new IllegalArgumentException("Invalid input. Please enter a valid number (integer or double).", e);
-        }
+        System.out.println(degrees);
     }
 }

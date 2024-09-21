@@ -4,35 +4,24 @@ import java.util.Scanner;
 
 public class Salary {
     public static void main(String[] args) {
-        try (Scanner scanner = new Scanner(System.in)) {
-            int openTabs = Integer.parseInt(scanner.nextLine());
-            int salary = Integer.parseInt(scanner.nextLine());
+        Scanner scanner = new Scanner(System.in);
 
-            for (int i = 0; i < openTabs; i++) {
-                String tab = scanner.nextLine();
-                switch (tab) {
-                    case "Facebook":
-                        salary -= 150;
-                        break;
-                    case "Instagram":
-                        salary -= 100;
-                        break;
-                    case "Reddit":
-                        salary -= 50;
-                        break;
-                    default:
-                        break;
-                }
+        int openTabs = Integer.parseInt(scanner.nextLine());
+        int salary = Integer.parseInt(scanner.nextLine());
 
-                if (salary <= 0) {
-                    System.out.println("You have lost your salary.");
-                    return;
-                }
+        for (int i = 0; i < openTabs; i++) {
+            String tab = scanner.nextLine();
+            switch (tab) {
+                case "Facebook" -> salary -= 150;
+                case "Instagram" -> salary -= 100;
+                case "Reddit" -> salary -= 50;
             }
-
-            System.out.println(salary);
-        } catch (NumberFormatException e) {
-            throw new IllegalArgumentException("Invalid input. Please enter a valid number (integer).", e);
+            if (salary <= 0) {
+                System.out.println("You have lost your salary.");
+                return;
+            }
         }
+
+        System.out.println(salary);
     }
 }

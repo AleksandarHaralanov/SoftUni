@@ -4,22 +4,17 @@ import java.util.Scanner;
 
 public class MaxNumber {
     public static void main(String[] args) {
-        try (Scanner scanner = new Scanner(System.in)) {
-            String input = scanner.nextLine();
+        Scanner scanner = new Scanner(System.in);
 
-            int max = Integer.MIN_VALUE;
-            while (!input.equals("Stop")) {
-                int num = Integer.parseInt(input);
-                if (num > max) {
-                    max = num;
-                }
+        String input = scanner.nextLine();
+        int max = Integer.MIN_VALUE;
 
-                input = scanner.nextLine();
-            }
-
-            System.out.println(max);
-        } catch (NumberFormatException e) {
-            throw new IllegalArgumentException("Invalid input. Please enter a valid number (integer).", e);
+        while (!input.equals("Stop")) {
+            int num = Integer.parseInt(input);
+            max = Math.max(num, max);
+            input = scanner.nextLine();
         }
+
+        System.out.println(max);
     }
 }

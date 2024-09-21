@@ -4,16 +4,13 @@ import java.util.Scanner;
 
 public class DepositCalculator {
     public static void main(String[] args) {
-        try (Scanner scanner = new Scanner(System.in)) {
-            double deposit = Double.parseDouble(scanner.nextLine());
-            int term = Integer.parseInt(scanner.nextLine());
-            double interest = Double.parseDouble(scanner.nextLine());
+        Scanner scanner = new Scanner(System.in);
 
-            double sum = deposit + (term * ((deposit * (interest / 100)) / 12));
+        double deposit = Double.parseDouble(scanner.nextLine());
+        int term = Integer.parseInt(scanner.nextLine());
+        double interest = Double.parseDouble(scanner.nextLine());
+        double sum = deposit + (term * ((deposit * (interest / 100)) / 12));
 
-            System.out.println(sum);
-        } catch (NumberFormatException e) {
-            throw new IllegalArgumentException("Invalid input. Please enter a valid number (integer or double).", e);
-        }
+        System.out.println(sum);
     }
 }

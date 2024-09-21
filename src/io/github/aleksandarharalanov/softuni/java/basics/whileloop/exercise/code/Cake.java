@@ -4,27 +4,25 @@ import java.util.Scanner;
 
 public class Cake {
     public static void main(String[] args) {
-        try (Scanner scanner = new Scanner(System.in)) {
-            int length = Integer.parseInt(scanner.nextLine());
-            int width = Integer.parseInt(scanner.nextLine());
+        Scanner scanner = new Scanner(System.in);
 
-            int piecesLeft = length * width;
-            while (piecesLeft > 0) {
-                String input = scanner.nextLine();
-                if (input.equals("STOP")) {
-                    break;
-                } else {
-                    piecesLeft -= Integer.parseInt(input);
-                }
-            }
+        int length = Integer.parseInt(scanner.nextLine());
+        int width = Integer.parseInt(scanner.nextLine());
+        int piecesLeft = length * width;
 
-            if (piecesLeft <= 0) {
-                System.out.printf("No more cake left! You need %d pieces more.", Math.abs(piecesLeft));
+        while (piecesLeft > 0) {
+            String input = scanner.nextLine();
+            if (input.equals("STOP")) {
+                break;
             } else {
-                System.out.printf("%d pieces are left.", piecesLeft);
+                piecesLeft -= Integer.parseInt(input);
             }
-        } catch (NumberFormatException e) {
-            throw new IllegalArgumentException("Invalid input. Please enter a valid number (integer).", e);
+        }
+
+        if (piecesLeft <= 0) {
+            System.out.printf("No more cake left! You need %d pieces more.%n", Math.abs(piecesLeft));
+        } else {
+            System.out.printf("%d pieces are left.%n", piecesLeft);
         }
     }
 }

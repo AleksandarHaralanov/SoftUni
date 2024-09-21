@@ -9,6 +9,7 @@ public class TrainTheTrainers {
         int jury = Integer.parseInt(scanner.nextLine());
         int presentations = 0;
         double totalAverage = 0;
+
         while (true) {
             String presentation = scanner.nextLine();
             if (presentation.equals("Finish")) {

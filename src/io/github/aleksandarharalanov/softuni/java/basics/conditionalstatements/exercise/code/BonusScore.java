@@ -4,29 +4,26 @@ import java.util.Scanner;
 
 public class BonusScore {
     public static void main(String[] args) {
-        try (Scanner scanner = new Scanner(System.in)) {
-            int number = Integer.parseInt(scanner.nextLine());
+        Scanner scanner = new Scanner(System.in);
 
-            double bonus;
+        int score = Integer.parseInt(scanner.nextLine());
+        double bonus;
 
-            if (number <= 100) {
-                bonus = 5;
-            } else if (number < 1000) {
-                bonus = number * 0.2;
-            } else {
-                bonus = number * 0.1;
-            }
-
-            if (number % 2 == 0) {
-                bonus += 1;
-            } else if (number % 10 == 5) {
-                bonus += 2;
-            }
-
-            System.out.println(bonus);
-            System.out.println(number + bonus);
-        } catch (NumberFormatException e) {
-            throw new IllegalArgumentException("Invalid input. Please enter a valid number (integer).", e);
+        if (score <= 100) {
+            bonus = 5;
+        } else if (score < 1000) {
+            bonus = score * 0.2;
+        } else {
+            bonus = score * 0.1;
         }
+
+        if (score % 2 == 0) {
+            bonus += 1;
+        } else if (score % 10 == 5) {
+            bonus += 2;
+        }
+
+        System.out.println(bonus);
+        System.out.println(score + bonus);
     }
 }

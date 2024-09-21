@@ -14,7 +14,6 @@ public class SumPrimeNonPrime {
             if (input.equals("stop")) {
                 break;
             }
-
             int num = Integer.parseInt(input);
             if (num < 0) {
                 System.out.println("Number is negative.");
@@ -25,7 +24,7 @@ public class SumPrimeNonPrime {
             if (num == 1) {
                 isPrime = false;
             } else {
-                for (int i = 2; i < num; i++) {
+                for (int i = 2; i <= Math.sqrt(num); i++) {
                     if (num % i == 0) {
                         isPrime = false;
                         break;

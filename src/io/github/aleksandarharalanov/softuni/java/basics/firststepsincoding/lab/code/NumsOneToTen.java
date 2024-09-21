@@ -12,11 +12,5 @@ public class NumsOneToTen {
         System.out.println(8);
         System.out.println(9);
         System.out.println(10);
-
-        /* Easier done with a for-loop, but done like this for the sake of the exercise steps.
-        for (int i = 1; i <= 10; i++) {
-            System.out.println(i);
-        }
-        */
     }
 }

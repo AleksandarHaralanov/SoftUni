@@ -4,8 +4,10 @@ import java.util.Scanner;
 
 public class GreetingByName {
     public static void main(String[] args) {
-        try (Scanner scanner = new Scanner(System.in)) {
-            System.out.printf("Hello, %s!", scanner.nextLine());
-        }
+        Scanner scanner = new Scanner(System.in);
+
+        String name = scanner.nextLine();
+
+        System.out.printf("Hello, %s!%n", name);
     }
 }

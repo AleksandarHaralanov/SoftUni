@@ -4,29 +4,19 @@ import java.util.Scanner;
 
 public class Cinema {
     public static void main(String[] args) {
-        try (Scanner scanner = new Scanner(System.in)) {
-            String projection = scanner.nextLine();
-            int rows = Integer.parseInt(scanner.nextLine());
-            int columns = Integer.parseInt(scanner.nextLine());
+        Scanner scanner = new Scanner(System.in);
 
-            double income;
-            switch (projection) {
-                case "Premiere":
-                    income = rows * columns * 12;
-                    break;
-                case "Normal":
-                    income = rows * columns * 7.5;
-                    break;
-                case "Discount":
-                    income = rows * columns * 5;
-                    break;
-                default:
-                    return;
-            }
+        String projection = scanner.nextLine();
+        int rows = Integer.parseInt(scanner.nextLine());
+        int columns = Integer.parseInt(scanner.nextLine());
+        double income = 0;
 
-            System.out.printf("%.2f leva%n", income);
-        } catch (NumberFormatException e) {
-            throw new IllegalArgumentException("Invalid input. Please enter a valid number (integer).", e);
+        switch (projection) {
+            case "Premiere" -> income = rows * columns * 12;
+            case "Normal" -> income = rows * columns * 7.5;
+            case "Discount" -> income = rows * columns * 5;
         }
+
+        System.out.printf("%.2f leva%n", income);
     }
 }

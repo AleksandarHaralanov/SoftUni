@@ -4,22 +4,14 @@ import java.util.Scanner;
 
 public class AnimalType {
     public static void main(String[] args) {
-        try (Scanner scanner = new Scanner(System.in)) {
-            String day = scanner.nextLine();
+        Scanner scanner = new Scanner(System.in);
 
-            switch (day) {
-                case "crocodile":
-                case "tortoise":
-                case "snake":
-                    System.out.println("reptile");
-                    break;
-                case "dog":
-                    System.out.println("mammal");
-                    break;
-                default:
-                    System.out.println("unknown");
-                    break;
-            }
+        String animal = scanner.nextLine();
+
+        switch (animal) {
+            case "crocodile", "tortoise", "snake" -> System.out.println("reptile");
+            case "dog" -> System.out.println("mammal");
+            default -> System.out.println("unknown");
         }
     }
 }

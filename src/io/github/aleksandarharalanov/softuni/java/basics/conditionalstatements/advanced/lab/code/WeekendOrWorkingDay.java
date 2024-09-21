@@ -4,25 +4,14 @@ import java.util.Scanner;
 
 public class WeekendOrWorkingDay {
     public static void main(String[] args) {
-        try (Scanner scanner = new Scanner(System.in)) {
-            String day = scanner.nextLine();
+        Scanner scanner = new Scanner(System.in);
 
-            switch (day) {
-                case "Monday":
-                case "Tuesday":
-                case "Wednesday":
-                case "Thursday":
-                case "Friday":
-                    System.out.println("Working day");
-                    break;
-                case "Saturday":
-                case "Sunday":
-                    System.out.println("Weekend");
-                    break;
-                default:
-                    System.out.println("Error");
-                    break;
-            }
+        String day = scanner.nextLine();
+
+        switch (day) {
+            case "Monday", "Tuesday", "Thursday", "Friday" -> System.out.println("Working day");
+            case "Saturday", "Sunday" -> System.out.println("Weekend");
+            default -> System.out.println("Error");
         }
     }
 }

@@ -4,22 +4,17 @@ import java.util.Scanner;
 
 public class MinNumber {
     public static void main(String[] args) {
-        try (Scanner scanner = new Scanner(System.in)) {
-            String input = scanner.nextLine();
+        Scanner scanner = new Scanner(System.in);
 
-            int min = Integer.MAX_VALUE;
-            while (!input.equals("Stop")) {
-                int num = Integer.parseInt(input);
-                if (num < min) {
-                    min = num;
-                }
+        String input = scanner.nextLine();
+        int min = Integer.MAX_VALUE;
 
-                input = scanner.nextLine();
-            }
-
-            System.out.println(min);
-        } catch (NumberFormatException e) {
-            throw new IllegalArgumentException("Invalid input. Please enter a valid number (integer).", e);
+        while (!input.equals("Stop")) {
+            int num = Integer.parseInt(input);
+            min = Math.min(num, min);
+            input = scanner.nextLine();
         }
+
+        System.out.println(min);
     }
 }

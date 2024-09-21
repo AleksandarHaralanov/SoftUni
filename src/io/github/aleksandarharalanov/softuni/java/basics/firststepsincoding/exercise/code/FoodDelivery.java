@@ -4,21 +4,19 @@ import java.util.Scanner;
 
 public class FoodDelivery {
     public static void main(String[] args) {
-        try (Scanner scanner = new Scanner(System.in)) {
-            int chicken = Integer.parseInt(scanner.nextLine());
-            int fish = Integer.parseInt(scanner.nextLine());
-            int vegetarian = Integer.parseInt(scanner.nextLine());
+        Scanner scanner = new Scanner(System.in);
 
-            double cPrice = chicken * 10.35;
-            double fPrice = fish * 12.4;
-            double vPrice = vegetarian * 8.15;
-            double menus = cPrice + fPrice + vPrice;
-            double desserts = menus * 0.2;
-            double total = menus + desserts + 2.5;
+        int chicken = Integer.parseInt(scanner.nextLine());
+        int fish = Integer.parseInt(scanner.nextLine());
+        int vegetarian = Integer.parseInt(scanner.nextLine());
 
-            System.out.println(total);
-        } catch (NumberFormatException e) {
-            throw new IllegalArgumentException("Invalid input. Please enter a valid number (integer).", e);
-        }
+        double chickenPrice = chicken * 10.35;
+        double fishPrice = fish * 12.4;
+        double vegetarianPrice = vegetarian * 8.15;
+        double menus = chickenPrice + fishPrice + vegetarianPrice;
+        double desserts = menus * 0.2;
+        double total = menus + desserts + 2.5;
+
+        System.out.println(total);
     }
 }

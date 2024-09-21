@@ -4,16 +4,12 @@ import java.util.Scanner;
 
 public class NumberInRange {
     public static void main(String[] args) {
-        try (Scanner scanner = new Scanner(System.in)) {
-            int num = Integer.parseInt(scanner.nextLine());
+        Scanner scanner = new Scanner(System.in);
 
-            if (num >= -100 && num <= 100 && num != 0) {
-                System.out.println("Yes");
-            } else {
-                System.out.println("No");
-            }
-        } catch (NumberFormatException e) {
-            throw new IllegalArgumentException("Invalid input. Please enter a valid number (integer).", e);
-        }
+        int num = Integer.parseInt(scanner.nextLine());
+
+        String inRange = (num >= -100 && num <= 100 && num != 0) ? "Yes" : "No";
+
+        System.out.println(inRange);
     }
 }

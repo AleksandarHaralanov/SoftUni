@@ -4,12 +4,11 @@ import java.util.Scanner;
 
 public class InchesToCentimeters {
     public static void main(String[] args) {
-        try (Scanner scanner = new Scanner(System.in)) {
-            double inches = Double.parseDouble(scanner.nextLine());
+        Scanner scanner = new Scanner(System.in);
 
-            System.out.println(inches * 2.54);
-        } catch (NumberFormatException e) {
-            throw new IllegalArgumentException("Invalid input. Please enter a valid number (double).", e);
-        }
+        double inches = Double.parseDouble(scanner.nextLine());
+        double centimeters = inches * 2.54;
+
+        System.out.println(centimeters);
     }
 }

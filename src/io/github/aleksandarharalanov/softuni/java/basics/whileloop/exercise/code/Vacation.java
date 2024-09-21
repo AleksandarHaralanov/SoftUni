@@ -4,38 +4,36 @@ import java.util.Scanner;
 
 public class Vacation {
     public static void main(String[] args) {
-        try (Scanner scanner = new Scanner(System.in)) {
-            double neededMoney = Double.parseDouble(scanner.nextLine());
-            double ownedMoney = Double.parseDouble(scanner.nextLine());
+        Scanner scanner = new Scanner(System.in);
 
-            int daysCounter = 0;
-            int spendingCounter = 0;
-            while (ownedMoney < neededMoney && spendingCounter < 5) {
-                String command = scanner.nextLine();
-                double money = Double.parseDouble(scanner.nextLine());
-                daysCounter++;
+        double neededMoney = Double.parseDouble(scanner.nextLine());
+        double ownedMoney = Double.parseDouble(scanner.nextLine());
+        int daysCounter = 0;
+        int spendingCounter = 0;
 
-                if (command.equals("save")) {
-                    ownedMoney += money;
-                    spendingCounter = 0;
-                } else if (command.equals("spend")) {
-                    ownedMoney -= money;
-                    spendingCounter++;
-                    if (ownedMoney < 0) {
-                        ownedMoney = 0;
-                    }
+        while (ownedMoney < neededMoney && spendingCounter < 5) {
+            String command = scanner.nextLine();
+            double money = Double.parseDouble(scanner.nextLine());
+            daysCounter++;
+            if (command.equals("save")) {
+                ownedMoney += money;
+                spendingCounter = 0;
+            } else if (command.equals("spend")) {
+                ownedMoney -= money;
+                spendingCounter++;
+                if (ownedMoney < 0) {
+                    ownedMoney = 0;
                 }
             }
+        }
 
-            if (spendingCounter == 5) {
-                System.out.println("You can't save the money.");
-                System.out.println(daysCounter);
-            }
-            if (ownedMoney >= neededMoney) {
-                System.out.printf("You saved the money for %d days.", daysCounter);
-            }
-        } catch (NumberFormatException e) {
-            throw new IllegalArgumentException("Invalid input. Please enter a valid number (integer or double).", e);
+        if (spendingCounter == 5) {
+            System.out.println("You can't save the money.");
+            System.out.println(daysCounter);
+        }
+
+        if (ownedMoney >= neededMoney) {
+            System.out.printf("You saved the money for %d days.%n", daysCounter);
         }
     }
 }

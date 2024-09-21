@@ -4,27 +4,28 @@ import java.util.Scanner;
 
 public class NumberPyramid {
     public static void main(String[] args) {
-        try (Scanner scanner = new Scanner(System.in)) {
-            int n = Integer.parseInt(scanner.nextLine());
+        Scanner scanner = new Scanner(System.in);
 
-            int current = 1;
-            boolean isBigger = false;
-            for (int rows = 1; rows <= n; rows++) {
-                for (int cols = 1; cols <= rows; cols++) {
-                    if (current > n) {
-                        isBigger = true;
-                        break;
-                    }
-                    System.out.printf("%d ", current);
-                    current++;
-                }
-                if (isBigger) {
+        int n = Integer.parseInt(scanner.nextLine());
+        int current = 1;
+        boolean isBigger = false;
+
+        for (int rows = 1; rows <= n; rows++) {
+            for (int cols = 1; cols <= rows; cols++) {
+                if (current > n) {
+                    isBigger = true;
                     break;
                 }
-                System.out.println();
+
+                System.out.printf("%d ", current);
+                current++;
             }
-        } catch (NumberFormatException e) {
-            throw new IllegalArgumentException("Invalid input. Please enter a valid number (integer).", e);
+
+            if (isBigger) {
+                break;
+            }
+
+            System.out.println();
         }
     }
 }
