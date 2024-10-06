@@ -27,6 +27,8 @@ The courses are structured to progressively increase in difficulty, providing a 
                <li><a href="src/io/github/aleksandarharalanov/softuni/java/basics/whileloop/exercise">While Loop - Exercise</a></li>
                <li><a href="src/io/github/aleksandarharalanov/softuni/java/basics/nestedloops/lab">Nested Loops - Lab</a></li>
                <li><a href="src/io/github/aleksandarharalanov/softuni/java/basics/nestedloops/exercise">Nested Loops - Exercise</a></li>
+               <li><a href="src/io/github/aleksandarharalanov/softuni/java/basics/exam/preparations">Exam - Preparations</a></li>
+               <li><a href="src/io/github/aleksandarharalanov/softuni/java/basics/exam">Exam</a></li>
             </ul>
          </details>
       </li>
