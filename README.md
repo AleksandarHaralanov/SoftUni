@@ -11,6 +11,7 @@ The courses are structured to progressively increase in difficulty, providing a 
 <details>
    <summary><b>Java</b></summary>
    <ul>
+      <li>JDK 21 has been used for these exercises.</li>
       <li>
          <details>
             <summary>Basics</summary>
