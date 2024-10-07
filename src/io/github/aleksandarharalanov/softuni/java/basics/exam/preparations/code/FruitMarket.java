@@ -18,6 +18,6 @@ public class FruitMarket {
 
         double total = bKg * bLv + oKg * oLv + rbKg * rbLv + sbKg * sbLv;
 
-        System.out.printf("%.2f", total);
+        System.out.printf("%.2f%n", total);
     }
 }

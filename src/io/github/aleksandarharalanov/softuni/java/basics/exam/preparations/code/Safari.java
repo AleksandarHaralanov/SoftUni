@@ -15,10 +15,10 @@ public class Safari {
 
         if (budget >= total) {
             double left = budget - total;
-            System.out.printf("Safari time! Money left: %.2f lv.", left);
+            System.out.printf("Safari time! Money left: %.2f lv.%n", left);
         } else {
             double need = Math.abs(total - budget);
-            System.out.printf("Not enough money! Money needed: %.2f lv.", need);
+            System.out.printf("Not enough money! Money needed: %.2f lv.%n", need);
         }
     }
 }

@@ -39,6 +39,6 @@ public class MobileOperator {
 
         double total = monthsToPay * cost;
 
-        System.out.printf("%.2f lv.", total);
+        System.out.printf("%.2f lv.%n", total);
     }
 }

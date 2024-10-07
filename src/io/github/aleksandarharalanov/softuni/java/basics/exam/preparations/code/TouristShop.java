@@ -27,7 +27,7 @@ public class TouristShop {
             if (budget < price) {
                 double need = Math.abs(budget - price);
                 System.out.println("You don't have enough money!");
-                System.out.printf("You need %.2f leva!", need);
+                System.out.printf("You need %.2f leva!%n", need);
                 return;
             }
 
@@ -35,6 +35,6 @@ public class TouristShop {
             budget -= price;
         }
 
-        System.out.printf("You bought %d products for %.2f leva.", count, total);
+        System.out.printf("You bought %d products for %.2f leva.%n", count, total);
     }
 }
