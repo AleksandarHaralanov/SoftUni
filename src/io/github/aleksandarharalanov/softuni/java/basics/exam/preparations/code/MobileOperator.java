@@ -35,7 +35,7 @@ public class MobileOperator {
         if (hasCellular.equals("yes")) {
             cost += (cost <= 10) ? 5.5 : (cost <= 30 ? 4.35 : 3.85);
         }
-        cost = contractTerm.equals("two") ? (cost * 0.9625) : cost;
+        cost *= contractTerm.equals("two") ? 0.9625 : 1;
 
         double total = monthsToPay * cost;
 
