@@ -1,4 +1,4 @@
-package io.github.aleksandarharalanov.softuni.java.basics.exam.preparations.code;
+package io.github.aleksandarharalanov.softuni.java.basics.exam.preparations.one.code;
 
 import java.util.Scanner;
 
