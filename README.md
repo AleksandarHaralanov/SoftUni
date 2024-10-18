@@ -4,7 +4,7 @@ This repository contains projects I have exercised upon during my education at [
 
 ## Projects
 
-You can choose which subject to focus on. 
+Choose which subject to focus on.
 
 The courses are structured to progressively increase in difficulty, providing a logical learning path from foundational to advanced topics.
 
