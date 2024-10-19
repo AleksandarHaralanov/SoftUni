@@ -40,9 +40,7 @@ public class CourierExpress {
         double finalSum = 0;
 
         switch (typeService) {
-            case "standard" -> {
-                finalSum = distanceKm * perKmTax;
-            }
+            case "standard" -> finalSum = distanceKm * perKmTax;
             case "express" -> {
                 double markupForKg = markup * perKmTax;
                 double markupForKm = perKmTax * markupForKg;
