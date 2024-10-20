@@ -18,12 +18,12 @@ public class FinalCompetition {
         }
 
         double bonus = location.equals("Abroad") ? 1.5 : 1;
-        double wonCompetition = ((dancers * points) * bonus) * cut;
+        double won = ((dancers * points) * bonus) * cut;
 
-        double charity = wonCompetition * 0.75;
-        double moneyPerDancer = (wonCompetition - charity) / dancers;
+        double charity = won * 0.75;
+        double perDancer = (won - charity) / dancers;
 
         System.out.printf("Charity - %.2f%n", charity);
-        System.out.printf("Money per dancer - %.2f%n", moneyPerDancer);
+        System.out.printf("Money per dancer - %.2f%n", perDancer);
     }
 }
