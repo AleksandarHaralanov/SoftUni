@@ -13,7 +13,6 @@ public class SumAndProduct {
             for (int b = 9; b >= a; b--) {
                 for (int c = 0; c <= 9; c++) {
                     for (int d = 9; d >= c; d--) {
-
                         int sum = a + b + c + d;
                         int multi = a * b * c * d;
 
