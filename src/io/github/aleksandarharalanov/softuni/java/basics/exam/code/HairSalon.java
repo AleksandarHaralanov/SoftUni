@@ -18,8 +18,7 @@ public class HairSalon {
 
             String input = scanner.nextLine();
             if (input.equals("closed")) {
-                System.out.println("Target not reached!");
-                System.out.printf("You need %dlv. more.%n", target - achieved);
+                System.out.printf("Target not reached! You need %dlv. more.%n", target - achieved);
                 System.out.printf("Earned money: %dlv.%n", achieved);
                 return;
             }
