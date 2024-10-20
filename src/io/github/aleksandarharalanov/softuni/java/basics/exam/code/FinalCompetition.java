@@ -17,7 +17,7 @@ public class FinalCompetition {
             case "winter" -> cut = location.equals("Bulgaria") ? 0.92 : 0.85;
         }
 
-        double bonus = location.equals("Abroad") ? 1.5 : 1.0;
+        double bonus = location.equals("Abroad") ? 1.5 : 1;
         double wonCompetition = ((dancers * points) * bonus) * cut;
 
         double charity = wonCompetition * 0.75;
